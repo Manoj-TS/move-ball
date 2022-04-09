@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.walls {
+  width: 400px;
+  height: 400px;
+  /* background-color: gray; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wall {
+  width: 20px;
+  height: 150px;
+  background-color: red;
+  position: absolute;
+}
+
+.wall1 {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.wall2 {
+  top: 50%;
+  transform: translate(380px, -50%);
+}
+.wall3 {
+  top: 0;
+  /* left: 0; */
+  transform: translateX(180px) translateY(-65px) rotate(90deg);
+}
+.wall4 {
+  bottom: 0;
+  transform: translateX(180px) translateY(65px) rotate(90deg);
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  /* transition: all 0.3s; */
+}
+
+.move-left {
+  left: 0;
+  top: 50%;
+  transform: translate(20px, -50%);
+}
+.move-bottom {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -70px);
+}
+
+button {
+  padding: 0.5em 2em;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 250px);
+}
+
+.move-right{
+    left: 310px;
+    right: 0;
+    top: 50%;
+    transform: translate(20px, -50%);
+    /* background-color: green; */
+}
+.move-top{
+    left: 50%;
+
+    top: 0;
+    transform: translate(-50%, 20px);
+    /* background-color: green; */
+}
